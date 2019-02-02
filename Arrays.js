@@ -11,3 +11,19 @@ function javaArrayCopy(source, sourcePos, dest, destPos, length){
 		}
 	}
 }
+
+function arrayEquals(array1, array2){
+	if (array1.length === array2.length){
+		const length = array1.length;
+
+		for (let index = 0; index < length; index++){
+			if (array1[index] !== array2[index]){
+				return false;
+			}
+		}
+
+		return true;
+	} else {
+		return false;
+	}
+}
